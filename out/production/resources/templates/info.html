@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>info</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column col-12">
+                <div class="col-4 col-mx-auto">
+                    <h1 align="center">welcome to info</h1>
+                </div>
+            </div>
+
+            <div class="column col-12">
+                <div class="col-6 col-mx-auto">
+                    <div class="empty">
+                        <div class="empty-icon">
+                            <i class="icon icon-people"></i>
+                        </div>
+                        <p class="empty-title h5" th:text="${title}">You have no new messages</p>
+                        <p class="empty-subtitle" th:text="${message}">Click the button to start a conversation.</p>
+                        <div class="empty-action">
+                            <button class="btn btn-primary">Send a message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
